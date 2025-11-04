@@ -1,0 +1,4 @@
+f=$1
+while read line; do
+  wget https://allthebacteria-assemblies.s3.eu-west-2.amazonaws.com/${line}.fa.gz
+done < $f
